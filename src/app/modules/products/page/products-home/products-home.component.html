@@ -1,0 +1,11 @@
+<app-toolbar-navigation></app-toolbar-navigation>
+<!--Passando produtos para componente filho-->
+<app-products-table [products]="productsDatas" (productEvent)="handleProductAction($event)"
+  (deleteProductEvent)="handleDeleteProductAction($event)"></app-products-table>
+
+<p-confirmDialog [style]="{ width: '50vw'}"></p-confirmDialog>
+
+
+
+
+<app-products-table></app-products-table>
